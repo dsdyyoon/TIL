@@ -1,6 +1,10 @@
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-X = np.array([[ 10., -10., 1.],[ 5., 0., 2.],[ 0., 10., 3.]])
+X = np.array(
+[[ 10., -10., 1.],
+[ 5., 0., 2.],
+[ 0., 10., 3.]]
+)
 
 min_max_scaler = MinMaxScaler()
 scaler = min_max_scaler.fit_transform(X)
@@ -11,6 +15,14 @@ sacler = x - Min / Max - Min
 
 배열 자료구조 특성상
 전체적으로 보면 안되고, 한 줄의 Min, Max를 구해서 변환해야함.
+
+
+따라서 현재 배열에서는 아래와 같은 결과가 나옴.
+
+array(
+[[ 1.,    0.,   0. ], 
+[ 0.5,  0.5,  0.5], 
+[ 0.,    1.,   1.]])
 
 
 
