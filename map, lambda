@@ -1,0 +1,29 @@
+map 
+:리스트의 요소를 지정된 함수로 처리
+
+lambda
+: 이름없는 함수 람다 표현식
+
+a = ['1','2','3','4']
+aint = list(map(int, a)) # 각각의 요소값에 적용
+aint
+
+
+
+# 각각의 제곱을 만들기 (map활용)
+def mysq(i):
+    return i**2
+
+a = [1, 2, 3, 4]
+asq  = list(map(mysq, a))
+asq
+
+
+
+# 각각의 제곱을 만들기 (lambda활용)
+def mysq(i):
+    return i**2
+
+a = [1, 2, 3, 4]
+asq  = list(map(lambda x : x**2, a))  #x 를 x**2으로 출력하여라
+asq
